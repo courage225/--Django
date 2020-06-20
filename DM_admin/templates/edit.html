@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="/static/tiny_mce/tiny_mce.js"></script>
+    <script>
+     tinyMCE.init({
+       'mode':'textareas',
+       'theme':'advanced',
+        'width':450,
+       'height':300
+    })</script>
+</head>
+<body>
+<form action="{% url 'App:wenzhang_xinwen_fabu' %}" method="post">
+    <textarea name="comment_content">富文本</textarea>
+    <input type="submit" value="提交评论" class="btn btn-default">
+</form>
+</body>
+</html>
